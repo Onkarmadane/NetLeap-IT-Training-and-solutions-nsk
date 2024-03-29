@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NITS | Carrers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/logo1.png" type="image/x-icon">
+<script src="./assets/js/formfunc.js" defer></script>  
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img src="./assets/images/logo2.png" height="60" width="150" alt="NITS" style="margin: 0; padding: 0;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="aboutus.html" class="nav-item nav-link">About</a>
+              <a href="faculty.html" class="nav-item nav-link">Faculty</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nciia+.html">NCIIA+</a></li>
+                  <li><a class="dropdown-item" href="nciip+.html">NCIIP+</a></li>
+                  <li><a class="dropdown-item" href="nccsse+.html">NCCSSE+</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="events.html">Events</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Achivements
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery.html">Awards</a></li>
+                  <li><a class="dropdown-item" href="events.html">MOU's</a></li>
+                  <li><a class="dropdown-item" href="events.html">Sponserships</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Carrers
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nciia+.html">Carrer in NetLeap</a></li>
+                  <li><a class="dropdown-item" href="nciip+.html">Internships</a></li>
+                </ul>
+              </li>
+              <a href="contactus.html" class="nav-item nav-link">Contact Us</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <div class="heading"><!--Enquiry Form-->
+    <h1><b>Enquire for Carrers at NetLeap Now</b></h1>
+  </div>
+      <form id="carrer-form">
+        <div class="form-group">
+          <label for="Name:">Name:</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Full Name"required>
+        </div><br>
+        <div class="form-group">
+          <label for="Email address:">Email address:</label>
+          <input type="email" class="form-control" id="email"  placeholder="Enter email" required>
+        </div><br>
+        <div class="form-group">
+          <label for="Contact No">Contact No:</label>
+          <input type="number" class="form-control" id="number" placeholder="Enter Your Number" required>
+        </div><br>
+        <div class="form-group">
+            <label for="Upload Your Resume">Upload Your Resume</label>
+            <input type="file" class="form-control-file" id="Resume">
+          </div>
+        <button type="submit" class="btn btn-danger mt-3" id="subtn" style="margin-bottom: 10.5%;">Submit</button>
+      </form>
+
+
+<!-- Back to top button -->
+<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out hvr-wobble-vertical" data-abc="true"></a>
+  <!-- Vertical button to launch the modal -->
+  <div class="launch-button hvr-bob" >
+    <button type="button" class=" btn button-glow  " data-bs-toggle="modal" data-bs-target="#inquiryModal" id="modal-btn">
+    ENQUIRE NOW
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div>
+  <div class="modal fade" id="inquiryModal" tabindex="-1" role="dialog" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mx-auto " id="inquiryModalLabel">Enquiry Form</h5>
+          <button type="button" class="close " data-bs-dismiss="modal" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Inquiry form goes here -->
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control mt-2 mb-2" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control mt-2 mb-2" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control mt-2 mb-2" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="program">Select a Program</label>
+              <select class="form-control mt-2 mb-2" id="program">
+                <option value="NCCSSE+">NCCSSE+</option>
+                <option value="NCIIA+">NCIIA+</option>
+                <option value="NCIIP+">NCIIP+</option>
+                <option value="Internship">Internship</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="areaOfInterest">Enter Your Message Here</label>
+              <textarea class="form-control mt-2 mb-2" id="areaOfInterest" rows="3"
+                placeholder="Enter Your Message Here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger hvr-buzz-out mt-2 mb-2" style="width: 100%;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+  <div class="footer mt-2">
+    <p style="margin-top: 1%;">&copy; 2023-2024 Netleap IT & Training Solutions | All Rights Reserved</p>
+    <p>Developed by <a href="https://www.linkedin.com/company/hackmaster-org/">Hackmaster Org.</a></p>
+  </div>
+
+  
+  </body>
+  </html>
